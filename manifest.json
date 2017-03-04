@@ -1,0 +1,18 @@
+{
+	"manifest_version":2,
+	"name":"dragSearch",
+
+	"description": "Drag the selected text to search in new tab",
+	"version":"1.0.0",
+	"author": "Ritik Saxena",
+
+	"content_scripts":[{
+		"js":["event.js"],
+		"matches":["<all_urls"]
+	}],
+	"permissions":[
+		"tabs",
+		"storage",
+		"management"
+	]
+}
