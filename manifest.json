@@ -8,13 +8,13 @@
 
 	"content_scripts":[{
 		"js":["event.js"],
-		"matches":["<all_urls"]
+		"matches":["<all_urls>"]
 	}],
 	"background":{
 		"persistent":true,
 		"scripts":["background.js"]
 	},
 	"permissions":[
-		"tabs",
+		"tabs"
 	]
 }

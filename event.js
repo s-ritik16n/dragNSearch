@@ -1,7 +1,4 @@
-document.body.setAttribute("draggable",true)
-
-document.body.ondragend = function(){
-
-	chrome.runtime.sendMessage({text:window.getSelection()})
-
-}
+document.body.addEventListener("dragend", function(){
+	console.log(window.getSelection().toString())
+	chrome.runtime.sendMessage({url:window.getSelection().toString()})
+})
