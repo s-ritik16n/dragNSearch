@@ -11,8 +11,6 @@
 		"matches":["<all_urls"]
 	}],
 	"permissions":[
-		"tabs",
-		"storage",
-		"management"
+		"tabs"
 	]
 }
